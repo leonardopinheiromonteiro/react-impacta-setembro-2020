@@ -3,7 +3,7 @@ const http = require('http');
 
 // Criar a função generica que vai responder.
 // as requisições do servidor.
-const tratarRespostaRequisicao = function(_, resposta) {
+const tratarRespostaRequisicao = function(requisicao, resposta) {
     resposta.writeHead(200, {'Content-Type':'text/html'});
     resposta.write("<h1>Meu primeiro Servidor Web em Node.js</h1>");
     resposta.end();
